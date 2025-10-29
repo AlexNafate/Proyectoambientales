@@ -1,0 +1,204 @@
+/* ===== Tipografía y estilo base ===== */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  color: #e8f5e9;
+  background: linear-gradient(180deg, #013220, #014d2a);
+}
+
+/* ===== Navegación superior ===== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(111, 218, 10, 0.8);
+  backdrop-filter: blur(10px);
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar .logo {
+  font-weight: 700;
+  color: #b2ff59;
+}
+
+.navbar nav a {
+  color: #f1f1f1;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar nav a:hover,
+.navbar nav a.active {
+  color: #b2ff59;
+}
+
+/* ===== Hero ===== */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  background: radial-gradient(circle at top, #0a4d2a, #0a4d2a);
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 600px;
+  margin-right: 2rem;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  color: #d8f3dc;
+}
+
+.tag {
+  display: inline-block;
+  background: rgba(178, 255, 89, 0.15);
+  color: #b2ff59;
+  border: 1px solid #b2ff59;
+  border-radius: 25px;
+  padding: 0.3rem 1rem;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+/* ===== Botones ===== */
+.btn {
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: all 0.3s;
+  display: inline-block;
+}
+
+.btn.primary {
+  background: #b2ff59;
+  color: #b2ff59;
+}
+
+.btn.primary:hover {
+  background: #aeea00;
+}
+
+.btn.secondary {
+  border: 1px solid #b2ff59;
+  color: #b2ff59;
+  margin-left: 0.5rem;
+}
+
+.btn.secondary:hover {
+  background: rgba(178, 255, 89, 0.2);
+}
+
+/* ===== Contenido general ===== */
+.content {
+  padding: 3rem 2rem;
+}
+
+/* Tarjetas glassmorphism */
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+h2, h3 {
+  color: #b2ff59;
+}
+
+/* ===== Tablas ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+table th, table td {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0.75rem;
+  text-align: left;
+  color: #d8f3dc;
+}
+
+/* ===== Cuidados / Artículos ===== */
+.cuidados-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+/* ===== Carrusel ===== */
+.carrusel {
+  overflow-x: auto;
+  display: flex;
+  justify-content: center;
+  scroll-behavior: smooth;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 1rem;
+}
+
+.carrusel-imagenes {
+  display: flex;
+  gap: 1rem;
+}
+
+.carrusel-imagenes img {
+  width: 260px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transition: transform 0.3s;
+}
+
+.carrusel-imagenes img:hover {
+  transform: scale(1.05);
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: rgba(69, 218, 10, 0.849);
+  color: #ffffff;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}
+.conclusion {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 20px 40px;
+  text-align: left;
+  line-height: 1.7;
+  color: #eaf6ea;
+}
+
+.conclusion h2 {
+  color: #9ff88a;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.conclusion p {
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
